@@ -73,6 +73,8 @@ public:
 		Red = 2
 	};
 
+	virtual void setPower(bool power) override {};
+
 private:
 	void reset();
 	void spiTransfer(uint8_t data);

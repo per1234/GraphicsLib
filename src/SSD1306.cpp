@@ -137,3 +137,9 @@ void SSD1306::sendInitCommands(void) {
 	sendCommand(0x2e);            // stop scroll
 	sendCommand(DISPLAYON);
 }
+
+
+void SSD1306::setPower(bool power)
+{
+
+}

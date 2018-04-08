@@ -14,5 +14,7 @@ public:
 	virtual void begin() = 0;
 	virtual void setPixel(int x, int y, uint8_t color) = 0;
 	virtual void display() = 0;
+
+	virtual void setPower(bool power) = 0;
 };
 

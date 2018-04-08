@@ -122,3 +122,7 @@ void SH1106::sendInitCommands(void) {
 	sendCommand(DISPLAYON);
 }
 
+void SH1106::setPower(bool power)
+{
+
+}

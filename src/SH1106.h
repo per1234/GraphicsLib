@@ -22,6 +22,7 @@ public:
 	virtual void begin() override;
 	virtual void setPixel(int x, int y, uint8_t color) override;
 	virtual void display() override;
+	virtual void setPower(bool power);
 private:
 	virtual void sendCommand(uint8_t data);
 	void sendInitCommands();
