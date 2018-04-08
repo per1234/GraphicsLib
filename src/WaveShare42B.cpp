@@ -234,7 +234,10 @@ void WaveShare42B::setPixel(int x, int y, uint8_t color)
 {
 	if (x < 0 || x >= getWidth() || y < 0 || y >= getHeight())
 	{
-		Serial.println("Error in screen bounds");
+		Serial.print("Error in screen bounds: ");
+		Serial.print(x);
+		Serial.print(", ");
+		Serial.println(y);
 		return;
 	}
 	if (color == White)
