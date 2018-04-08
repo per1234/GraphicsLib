@@ -1,0 +1,15 @@
+{
+    "name": "GraphicsLib",
+    "keywords": "arduino, oled, epaper",
+    "description": "A small library for drawing graphics on different kinds of screens",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/borf/GraphicsLib.git"
+    },
+    "version": "0.9",
+    "examples": "examples/*/*.ino",
+    "frameworks": "arduino",
+    "platforms": [
+        "espressif"
+    ]
+}
