@@ -15,6 +15,9 @@ class Graphics : public Print
 	int fontCursorX = 0;
 	int fontCursorY = 0;
 
+	int offsetX = 0;
+	int offsetY = 0;
+
 public:
 	Graphics(DisplayDriver* driver);
 	~Graphics();
@@ -45,6 +48,8 @@ public:
 		Right,
 		Center
 	};
+
+	void setOffset(int x, int y) { this->offsetX = x; this->offsetY = y; }
 
 	void setCursor(int x, int y);
 	void setFont(const uint8_t* fontData);

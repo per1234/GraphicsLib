@@ -43,7 +43,7 @@ void Graphics::setPixel(int x, int y)
 }
 void Graphics::setPixel(int x, int y, int color)
 {
-	this->driver->setPixel(x, y, color);
+	this->driver->setPixel(x+offsetX, y+offsetY, color);
 }
 
 void Graphics::display() 
@@ -65,7 +65,7 @@ void Graphics::clear(int color)
 {
 	for (int y = 0; y < driver->getHeight(); y++)
 		for (int x = 0; x < driver->getWidth(); x++)
-			driver->setPixel(x, y, color);
+			setPixel(x, y, color);
 }
 
 void Graphics::drawLine(int x0, int y0, int x1, int y1)
